@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Exercise 2</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            color:#eee;
+            box-sizing: border-box;
+        }
+        nav {
+            padding:20px 40px;
+            background-color: #111;
+            width: calc(100% - 80px);
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul {
+            width: 300px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        li {
+            list-style: none;
+        }
+        .fa-bars {
+            display: none;
+        }
+        @media (max-width:768px) {
+            ul {
+                display: none;
+            }
+            .fa-bars {
+                display: contents;
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><h4>Logo</h4></div>
+        <i class="fa-solid fa-bars"></i>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
